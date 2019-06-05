@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+
+    <!---->
+    <bean id="stu10" class="net.wanho.Student" autowire="byType">
+        <property name="id" value="4"/>
+        <property name="name" value="aaa"/>
+        <property name="age" value="18"/>
+    </bean>
+
+    <bean id="score" class="net.wanho.Score">
+
+        <property name="chinese" value="0"/>
+        <property name="math" value="100"/>
+        <property name="english" value="100"/>
+    </bean>
+
+
+</beans>
